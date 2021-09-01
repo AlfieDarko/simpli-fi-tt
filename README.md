@@ -12,23 +12,53 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To run storybook:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run storybook
+# or
+yarn storybook
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
+
+To run tests:
+
+```bash
+npm run test
+# or
+yarn test
+```
+
+# Tech Test For Simpli.Fi
+
+In this techtest, I was given the task to create a simple button with 3 states (Primary, Secondary and Danger).
+The buttons were to be different colours and to change appearance on user interaction.
+
+# Tech Used
+
+- Next.JS ( Quick simple setup and quick deployment on vercel)
+- Styled Components ( Makes working with component theming really easy)
+- Storybook ( Makes it easy to show non frontend devs components and allows for a playground experience for user testing)
+- React Testing Library
+- Vercel
+
+## What I liked?
+
+I enjoyed doing the button styling. Playing around with the different colour schemes was fun. The colours abit pastelised but stay true to the usual UX sensibilities of button colours.
+
+## What I didnt like
+
+- The focus CSS style. I think I could have made it more overt for a better a11y user experience. It's not bad though.
+
+## What I would have implemented with more time
+
+- Snapshot testing in the CI
+- Added Husky for pre commit linting.
+- Maybe some storybook addons but it would probably been abit overkill for this task.
+- Maybe a separate styling for when the button is disabled. I kept it simple by having it where clicking a disabled button doesnt go all the way down and added a 'not-allowed' cursor.
+  I think I could have made it more apparent stylewise. Perhaps gray out the button? I also would have probably used framer motion to add a little button shake effect if the user tried to press a disabled button.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
