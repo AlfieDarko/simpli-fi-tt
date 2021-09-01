@@ -45,6 +45,12 @@ The buttons were to be different colours and to change appearance on user intera
 - React Testing Library
 - Vercel
 
+## Small Changes
+
+I renamed the property 'type' as required in the tech test to 'status' because it's not a good idea to create a component has properties that overwrite the original HTML property, (Button has one called type).
+
+I think the term 'variant' would have been a better option too.
+
 ## What I liked?
 
 I enjoyed doing the button styling. Playing around with the different colour schemes was fun. The colours abit pastelised but stay true to the usual UX sensibilities of button colours.
