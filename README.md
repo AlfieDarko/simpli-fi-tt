@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Technical Test Project URL:
+
+https://simpli-fi-tt.vercel.app/ (DEMO)
 
 ## Getting Started
 
@@ -53,12 +55,9 @@ I enjoyed doing the button styling. Playing around with the different colour sch
 
 ## What I would have implemented with more time
 
+- Deployed the Storybook environment on vercel
 - Snapshot testing in the CI
 - Added Husky for pre commit linting.
 - Maybe some storybook addons but it would probably been abit overkill for this task.
 - Maybe a separate styling for when the button is disabled. I kept it simple by having it where clicking a disabled button doesnt go all the way down and added a 'not-allowed' cursor.
   I think I could have made it more apparent stylewise. Perhaps gray out the button? I also would have probably used framer motion to add a little button shake effect if the user tried to press a disabled button.
-
-## Learn More
-
-## Deploy on Vercel
