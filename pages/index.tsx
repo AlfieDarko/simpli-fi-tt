@@ -17,22 +17,30 @@ const Home: NextPage = () => {
     window.location.reload();
   };
 
+  const goToOpenSea = () => {
+    window.location.href = 'https://opensea.io';
+  };
+
+  const goToRekt = () => {
+    window.location.href = 'https://www.rekt.news/';
+  };
+
   return (
     <>
       <Container>
         <Box>
-          <Button text={'Mint NFT'} action={refreshPage} status={'primary'} />
+          <Button text={'Mint NFT'} action={goToOpenSea} status={'primary'} />
         </Box>
         <Box>
           <Button text={'Cancel Transaction'} action={refreshPage} status={'secondary'} />
         </Box>
 
         <Box>
-          <Button text={'Rugpull'} action={refreshPage} status={'danger'} />
+          <Button text={'Rugpull'} action={goToRekt} status={'danger'} />
         </Box>
 
         <Box>
-          <Button text={'Disabled'} disabled action={refreshPage} status={'primary'} />
+          <Button text={'Disabled'} disabled status={'primary'} />
         </Box>
       </Container>
     </>
